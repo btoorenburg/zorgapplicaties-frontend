@@ -1,0 +1,32 @@
+.flexcontainer {
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  height: 87vh;
+
+  /*  */
+  margin: 0px;
+  background-color: #e6f2ff;
+
+
+  /* Margin bottom by footer height
+  height: 100%;
+  min-height: 100%;
+  flex-grow: 100%;
+
+  position: absolute;
+  margin-right: 0%;
+  margin-bottom: 60px;
+
+
+  */
+}
+.side-panel {
+flex-grow: 1.5
+}
+
+.main-panel {
+flex-grow: 8
+
+}
+
