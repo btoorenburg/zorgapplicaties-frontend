@@ -1,0 +1,31 @@
+<div class="flexcontainer row">
+
+  <app-jaarrekeningselectie class="side-panel col-4"></app-jaarrekeningselectie>
+
+  <ngb-tabset class="col-8">
+      <ngb-tab title="Balans">
+        <ng-template ngbTabContent>
+          <div class="container row">
+            <app-activa></app-activa>
+            <app-passiva></app-passiva>
+          </div>
+        </ng-template>
+      </ngb-tab>
+      <ngb-tab title="Exploitatie">
+        <ng-template ngbTabContent>
+          <p>Het raadplegen van de exploitatie.</p>
+          <app-opbrengsten></app-opbrengsten>
+          <app-kosten></app-kosten>
+        </ng-template>
+      </ngb-tab>
+      <ngb-tab title="KPI's">
+        <ng-template ngbTabContent>
+          <p>De weergave van de KPI's uit de jaarrekening. </p>
+          <app-jaarrekeningkpi></app-jaarrekeningkpi>
+        </ng-template>
+      </ngb-tab>
+  </ngb-tabset>
+
+</div>
+
+

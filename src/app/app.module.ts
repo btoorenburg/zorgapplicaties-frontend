@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { RouterModule, Routes, RoutesRecognized } from '@angular/router';
+import { routing } from './app.routing';
 
 // Import van de firebase modules
 import { AngularFireModule } from 'angularfire2';
@@ -18,31 +20,46 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppComponent } from './app.component';
 import { AppNavbarComponent } from './app-navbar/app-navbar.component';
 import { AppFooterComponent } from './app-footer/app-footer.component';
-import { AppSidepanelComponent } from './app-sidepanel/app-sidepanel.component';
-import { AppMainpanelComponent } from './app-mainpanel/app-mainpanel.component';
 import { AppSigninComponent } from './app-signin/app-signin.component';
 import { AppRegisterComponent } from './app-register/app-register.component';
-import { JaarrekeningComponent } from './jaarrekening/jaarrekening.component';
 
-
+import { OpeningComponent } from './components/opening/opening.component';
+import { JaarrekeningSelectieComponent } from './components/jaarrekeningselectie/jaarrekeningselectie.component';
+import { JaarrekeningComponent } from './components/jaarrekening/jaarrekening.component';
+import { ActivaComponent } from './components/activa/activa.component';
+import { PassivaComponent } from './components/passiva/passiva.component';
+import { OpbrengstenComponent } from './components/opbrengsten/opbrengsten.component';
+import { KostenComponent } from './components/kosten/kosten.component';
+import { JaarrekeninginvoerComponent } from './components/jaarrekeninginvoer/jaarrekeninginvoer.component';
+import { JaarrekeningvergelijkingComponent } from './components/jaarrekeningvergelijking/jaarrekeningvergelijking.component';
+import { JaarrekeningkpiComponent } from './components/jaarrekeningkpi/jaarrekeningkpi.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AppNavbarComponent,
     AppFooterComponent,
-    AppSidepanelComponent,
-    AppMainpanelComponent,
     AppSigninComponent,
     AppRegisterComponent,
-    JaarrekeningComponent
+    JaarrekeningComponent,
+    JaarrekeningSelectieComponent,
+    ActivaComponent,
+    PassivaComponent,
+    OpbrengstenComponent,
+    KostenComponent,
+    JaarrekeninginvoerComponent,
+    JaarrekeningvergelijkingComponent,
+    JaarrekeningkpiComponent,
+    OpeningComponent
   ],
   imports: [
     BrowserModule,
+    NgbModule.forRoot(),
+    routing,
+    // RouterModule.forRoot(routing),
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
-    AngularFireAuthModule,
-    NgbModule.forRoot()
+    AngularFireAuthModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,13 @@
+.jaarrekening {
+  display: flex;
+  border-width: thin;
+
+}
+
+.jaarrekening-sub {
+  background-color: #c0c0c0;
+  border: 1px solid GREY;
+  padding: 15px 15px;
+  margin-left: 5px;
+  margin-right: 5px;
+}

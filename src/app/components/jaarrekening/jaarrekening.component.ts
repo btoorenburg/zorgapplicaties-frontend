@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'jaarrekening',
+  selector: 'app-jaarrekening',
   templateUrl: './jaarrekening.component.html',
   styleUrls: ['./jaarrekening.component.css']
 })

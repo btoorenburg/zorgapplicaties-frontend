@@ -15,6 +15,18 @@ html {
   min-height: 100%;
 }
 
+.form-group-xs {
+  height: 30px;
+  padding: 3px 3px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+  margin-bottom: 5px;
+}
+
+input {
+
+}
 
 /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
 

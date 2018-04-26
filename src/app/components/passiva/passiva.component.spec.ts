@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AppMainpanelComponent } from './app-mainpanel.component';
+import { PassivaComponent } from './passiva.component';
 
-describe('AppMainpanelComponent', () => {
-  let component: AppMainpanelComponent;
-  let fixture: ComponentFixture<AppMainpanelComponent>;
+describe('PassivaComponent', () => {
+  let component: PassivaComponent;
+  let fixture: ComponentFixture<PassivaComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AppMainpanelComponent ]
+      declarations: [ PassivaComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AppMainpanelComponent);
+    fixture = TestBed.createComponent(PassivaComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
